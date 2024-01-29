@@ -6,9 +6,9 @@ spring:
   boot:
     admin:
       client:
-        url: http://44.215.126.0:8888/admin
+        url: http://44.204.127.45:8888/admin
         instance:
-          service-base-url: http://44.215.126.0:8888/admin
+          service-base-url: http://44.204.127.45:8888/admin
 eureka:
   client:
     register-with-eureka: false
