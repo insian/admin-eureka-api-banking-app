@@ -1,0 +1,30 @@
+server:
+  port: ${PORT:0}
+  servlet:
+    context-path: /loan-app
+spring:
+  application:
+    name: banking-app
+  boot:
+    admin:
+      client:
+        url:
+        - http://44.215.126.0:8888/admin
+        instance:
+          service-base-url: http://44.215.126.0:8888/admin
+       
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://3.238.58.112:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'

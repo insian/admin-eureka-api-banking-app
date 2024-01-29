@@ -1,0 +1,7 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /admin
+spring:
+  application:
+    name: admin-server

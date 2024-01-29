@@ -1,0 +1,21 @@
+[
+	{
+	    "accountNumber":"ACC-001",
+	    "accountHolderName":"Soham1",
+	    "accountHolderAddress":"Kolkata1",
+	    "accountHolderEmail":"soham1@email.com",
+	    "accountBalance":5000.00,
+	    "minBalance":500.00
+	},
+	{
+		"accountNumber":"ACC-002",
+	    "accountHolderName":"Shayam",
+	    "accountHolderAddress":"Bhubhaneshwar",
+	    "accountHolderEmail":"shayam@email.com"
+	},
+	{
+	    "accountHolderName":"Shayam",
+	    "accountHolderAddress":"Bhubhaneshwar",
+	    "accountHolderEmail":"shayam@email.com"
+	}
+]

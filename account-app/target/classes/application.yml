@@ -1,0 +1,37 @@
+server:
+  port: ${PORT:0}
+  servlet:
+    context-path: /account-app
+spring:
+  application:
+    name: banking-app
+  datasource:
+    url: jdbc:mysql://18.206.85.29:3307/account
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  boot:
+    admin:
+      client:
+        url:
+        - http://44.215.126.0:8888/admin
+        instance:
+          service-base-url: http://44.215.126.0:8888/admin
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://3.238.58.112x:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
