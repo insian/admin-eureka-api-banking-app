@@ -6,7 +6,7 @@ spring:
   application:
     name: banking-app
   datasource:
-    url: jdbc:mysql://100.27.36.41:3307/account
+    url: jdbc:mysql://44.200.201.232:3307/account
     username: root
     password: root
   jpa:
@@ -17,15 +17,15 @@ spring:
     admin:
       client:
         url:
-        - http://44.192.6.204:8888/admin
+        - http://34.205.135.13:8888/admin
         instance:
-          service-base-url: http://44.192.6.204:8888/admin
+          service-base-url: http://34.205.135.13:8888/admin
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://3.238.58.112:8761/eureka
+      defaultZone: http://34.206.1.209:8761/eureka
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
