@@ -20,6 +20,9 @@ spring:
         - http://34.205.135.13:8888/admin
         instance:
           service-base-url: http://34.205.135.13:8888/admin
+  cloud:
+    discovery:
+      enabled: true
 eureka:
   client:
     register-with-eureka: true
